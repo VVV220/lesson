@@ -1,41 +1,64 @@
 #include <iostream>
 #include <string>
 
-int banana = 125;
-int pearl = 352;
-int chocolate = 546;
-int chicen = 239;
-
-
-
-void eat() {
-	std::cout << "1. банан: " << banana << std::endl;
-	std::cout << "2. perlovka: " << pearl << std::endl;
-	std::cout << "3. chocolate: " << chocolate << std::endl;
-	std::cout << "4. chicen: " << chicen << std::endl;
-
+//int banana = 125;
+//int pearl = 352;
+//int chocolate = 546;
+//int chicen = 239;
+//int tomatoes = 20;
+//int kefir = 38;
+//int oranges = 45;
+//int garlic = 60;
+//int green_bean = 328;
+//int flour = 340;
+//int eggs = 65;
+//
+//
+//void eat() {
+//	std::cout << "1. банан: "  << std::endl;
+//	std::cout << "2. перловкa: "  << std::endl;
+//	std::cout << "3. шоколад: "  << std::endl;
+//	std::cout << "4. курица: "  << std::endl;
+//	std::cout << "5. помидоры:" << std::endl;
+//	std::cout << "6. кефир:" << std::endl;
+//	std::cout << "7. апельсины:" << std::endl;
+//	std::cout << "8. чеснок:" << std::endl;
+//	std::cout << "9. фасоль:" << std::endl;
+//	std::cout << "10. мука:" << std::endl;
+//	std::cout << "11. €йца:" << std::endl;
+//}
+//
+//
+//int main() {
+//
+//	//eat();
+//
+//	int sum;
+//	int temp = 1;
+//	
+//	std::cin >> sum;
+//	while (temp != 0) {
+//
+//		std::cin >> temp;
+//		std::cout << "\n";
+//		sum = sum + temp;
+//		std::cout << sum;
+//	}
+//
+//}
+void name(){
+std::cout << "1.камень\n";
+std::cout << "2.ножницы\n";
+std::cout << "3.бумага \n";
 }
-
 
 int main() {
+	int user;
+	int ps;
 	setlocale(LC_ALL, "Russian");
+	name();
 
-	eat();
-	int temp;
-	
-	std::cin >> temp;
-	if (temp == 1) {
-		std::cout << "banana: " << banana << std::endl;
-	}
-	if (temp == 2) {
-		std::cout << "2. perlovka: " << pearl << std::endl;
 
-	}
-	if (temp == 3) {
-		std::cout << "3. chocolate: " << chocolate << std::endl;
-	}
-	if (temp == 4) {
-		std::cout << "4. chicen: " << chicen << std::endl;
-	}
 }
+
 
