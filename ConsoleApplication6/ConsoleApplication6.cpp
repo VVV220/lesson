@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-
+#include <Windows.h>
 //int banana = 125;
 //int pearl = 352;
 //int chocolate = 546;
@@ -52,13 +52,28 @@ std::cout << "2.ножницы\n";
 std::cout << "3.бумага \n";
 }
 
-int main() {
-	int user;
-	int ps;
+
+
+int main()
+{ 
 	setlocale(LC_ALL, "Russian");
+	//SetConsoleCP(1251);
 	name();
+	srand(time(NULL));
+	int user;
 
-
+	int gr= 1 + rand() % 3;
+	std::cin >> user;
+	if (user == 1 && gr == 2 || user == 2 && gr == 3 || user == 3 && gr == 1)
+	{
+		std::cout << "Victory!!";
+	}
+	else if (user == gr) {
+		std::cout << "Ничья";
+	}
+	else {
+		std::cout << "Loose";
+	}
 }
 
 
